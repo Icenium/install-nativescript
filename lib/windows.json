@@ -1,0 +1,8 @@
+{
+    "getNodeCommand": "where node",
+    "nodeInstallerSuffix": ".msi",
+    "nodeDownloadAddress": "https://nodejs.org/dist/v%{0}/node-v%{0}-x86.msi",
+    "installCommand": "msiexec.exe /i \"%{0}\" /qn",
+    "getCLICommand": "where nativescript",
+    "installCLICommand": "npm install nativescript -g"
+}

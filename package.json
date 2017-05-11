@@ -1,0 +1,25 @@
+{
+  "name": "install-nativescript",
+  "version": "1.0.0",
+  "description": "Package that helps you install Node.js, npm and nativescript-cli.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Icenium/install-nativescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Icenium/install-nativescript/issues"
+  },
+  "homepage": "https://github.com/Icenium/install-nativescript#readme",
+  "dependencies": {
+    "get-shell-vars": "^1.0.0",
+    "sudo-prompt": "^7.0.0",
+    "temp": "^0.8.3"
+  }
+}
