@@ -4,5 +4,5 @@
     "nodeDownloadAddress": "https://nodejs.org/dist/v%{0}/node-v%{0}.pkg",
     "installCommand": "installer -pkg %{0}  -target /",
     "getCLICommand": "which nativescript",
-    "installCLICommand": "npm install nativescript -g --unsafe-perm"
+    "installCLICommand": "npm install nativescript%{0} -g --unsafe-perm"
 }
