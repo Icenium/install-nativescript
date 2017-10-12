@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Icenium/install-nativescript#readme",
   "dependencies": {
     "get-shell-vars": "^1.0.0",
+    "nativescript-doctor": "^0.7.0",
     "sudo-prompt": "^7.0.0",
     "temp": "^0.8.3"
   }

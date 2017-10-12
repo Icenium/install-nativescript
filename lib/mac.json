@@ -3,7 +3,7 @@
     "nodeInstallerSuffix": ".pkg",
     "nodeDownloadAddress": "https://nodejs.org/dist/v%{0}/node-v%{0}.pkg",
     "installCommand": "installer -pkg %{0}  -target /",
-    "removeNPMCommand": "npm uninstall -g npm",
+    "removeGlobalPackageCommand": "npm uninstall -g %{0}",
     "getCLICommand": "which nativescript",
     "installCLICommand": "npm install -g nativescript%{0} --unsafe-perm"
 }
