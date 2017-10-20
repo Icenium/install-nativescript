@@ -1,9 +1,3 @@
-const helpers = require("./lib/helpers");
-const ensureNodeServiceGenerator = require("./lib/ensure-node-service");
-const ensureCLIServiceGenerator = require("./lib/ensure-cli-service");
-
-const ensureNodeService = ensureNodeServiceGenerator(helpers);
-const ensureCLIService = ensureCLIServiceGenerator(helpers);
 const { platform } = process;
 
 let platformConfig;
@@ -19,9 +13,16 @@ switch (platform) {
         throw new Error(`Unsupported platform: ${platform}`);
 }
 
+const helpers = require("./lib/helpers");
+const ensureNodeServiceGenerator = require("./lib/ensure-node-service");
+const ensureCLIServiceGenerator = require("./lib/ensure-cli-service");
+
+const ensureNodeService = ensureNodeServiceGenerator(helpers, platformConfig);
+const ensureCLIService = ensureCLIServiceGenerator(helpers, platformConfig);
+
 const ensureNativeScript = ({ nodeVersion, cliVersion }) => {
-    return ensureNodeService.ensureNode(platformConfig, nodeVersion)
-        .then(ensureCLIService.ensureCLI.bind(null, platformConfig, cliVersion));
+    return ensureNodeService.ensureNode(nodeVersion)
+        .then(ensureCLIService.ensureCLI.bind(ensureCLIService, cliVersion));
 };
 
 module.exports = {
