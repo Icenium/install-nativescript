@@ -6,6 +6,9 @@
     "installCommand": "msiexec.exe /i \"%{0}\" /qn",
     "removeGlobalPackageCommand": "npm uninstall -g %{0}",
     "getCLICommand": "where nativescript",
-    "installCLICommand": "npm install -g nativescript%{0}",
-    "getPATHCommand": "echo %PATH%"
+    "installCLICommand": "npm install -g nativescript%{0} --ignore-scripts",
+    "getPATHCommand": "echo %PATH%",
+    "getPrefixPathCommand": "",
+    "getCachePathCommand": "",
+    "fixNPMPermissionsCommand": ""
 }

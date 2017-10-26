@@ -6,6 +6,9 @@
     "installCommand": "installer -pkg %{0}  -target /",
     "removeGlobalPackageCommand": "npm uninstall -g %{0}",
     "getCLICommand": "which nativescript",
-    "installCLICommand": "npm install -g nativescript%{0} --unsafe-perm",
-    "getPATHCommand": "echo $PATH"
+    "installCLICommand": "npm install -g nativescript%{0} --ignore-scripts",
+    "getPATHCommand": "",
+    "getPrefixPathCommand": "npm config get prefix",
+    "getCachePathCommand": "npm config get cache",
+    "fixNPMPermissionsCommand": "chown -R $(whoami) %{0}"
 }
