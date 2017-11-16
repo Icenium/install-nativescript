@@ -10,5 +10,6 @@
     "getPATHCommand": "echo %PATH%",
     "getPrefixPathCommand": "",
     "getCachePathCommand": "",
+    "getCurrentUser": "",
     "fixNPMPermissionsCommand": ""
 }

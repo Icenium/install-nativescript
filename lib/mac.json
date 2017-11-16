@@ -10,5 +10,6 @@
     "getPATHCommand": "",
     "getPrefixPathCommand": "npm config get prefix",
     "getCachePathCommand": "npm config get cache",
-    "fixNPMPermissionsCommand": "chown -R $(whoami) %{0}"
+    "getCurrentUserCommand": "whoami",
+    "fixNPMPermissionsCommand": "chown -R %{0} %{1}"
 }
