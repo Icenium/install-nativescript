@@ -1,6 +1,6 @@
 {
   "name": "install-nativescript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Package that helps you install Node.js, npm and nativescript-cli. Works only on Windows and Mac.",
   "main": "index.js",
   "scripts": {
