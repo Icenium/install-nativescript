@@ -10,8 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Icenium/install-nativescript.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "NativeScript",
+    "tns"
+  ],
+  "author": "Telerik <support@telerik.com>",
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/Icenium/install-nativescript/issues"
