@@ -25,7 +25,7 @@ installNativeScript.ensureNode()
 * [fixMissingNPMPermissions](#fixmissingnpmpermissions)
 
 ### ensureNode
-The `ensureNode` method checks if node is installed on the machine. In case it cannot detect it, the method downloads a node installer and runs it. You can pass a specific node version to install. In case it is not provided, the method installs version 6.11.4.
+The `ensureNode` method checks if node is installed on the machine. In case it cannot detect it, the method downloads a node installer and runs it. You can pass a specific node version to install. In case it is not provided, the method installs version 8.11.3.
 
 Note: This method changes process.env so that after it succeeds, you can install and detect globally installed npm modules.
 
@@ -37,7 +37,10 @@ installNativeScript.ensureNode();
 ```
 
 ### ensureCLI
-The `ensureCLI` method checks if you have NativeScript CLI installed globally on your machine. In case it cannot detect it, the method installs it globally using npm. You can pass a specific NativeScript CLI version to install. In case it is not provided, the method installs the latest official version.
+The `ensureCLI` method checks if you have NativeScript CLI installed globally on your machine. 
+
+- In case it cannot detect it, the method installs it globally using npm. You can pass a specific NativeScript CLI version to install. In case it is not provided, the method installs the latest official version.
+- In case it detects a version, the method will update it in case you pass a specific minVersion and the current version does not satisfy the requirement. Again, in case a specific version is not provided, the method installs the latest official version.
 
 Usage:
 ```JavaScript
