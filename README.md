@@ -40,7 +40,7 @@ installNativeScript.ensureNode();
 The `ensureCLI` method checks if you have NativeScript CLI installed globally on your machine. 
 
 - In case it cannot detect it, the method installs it globally using npm. You can pass a specific NativeScript CLI version to install. In case it is not provided, the method installs the latest official version.
-- In case it detects a version, the method will update it in case you pass a specific minVersion and the current version does not satisfy the requirement. Again, in case a specific version is not provided, the method installs the latest official version.
+- In case it detects a version, the method will update it in case you pass a specific versionRange and the current version does not satisfy the requirement. Again, in case a specific version is not provided, the method installs the latest official version.
 
 Usage:
 ```JavaScript
