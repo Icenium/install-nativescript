@@ -25,7 +25,7 @@ installNativeScript.ensureNode()
 * [fixMissingNPMPermissions](#fixmissingnpmpermissions)
 
 ### ensureNode
-The `ensureNode` method checks if node is installed on the machine. In case it cannot detect it, the method downloads a node installer and runs it. You can pass a specific node version to install. In case it is not provided, the method installs version 8.11.3.
+The `ensureNode` method checks if node is installed on the machine. In case it cannot detect it, the method downloads a node installer and runs it. You can pass a specific node version to install. In case it is not provided, the method installs version 10.15.3.
 
 Note: This method changes process.env so that after it succeeds, you can install and detect globally installed npm modules.
 
